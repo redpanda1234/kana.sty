@@ -1,3 +1,4 @@
+```latex
 \documentclass{standalone}
 \usepackage{kana}
 
@@ -30,3 +31,10 @@ $\displaystyle
 $
 
 \end{document}
+```
+
+<object data="https://github.com/redpanda1234/kana.sty/blob/master/kana-test.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://github.com/redpanda1234/kana.sty/blob/master/kana-test.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/redpanda1234/kana.sty/blob/master/kana-test.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
