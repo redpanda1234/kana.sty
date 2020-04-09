@@ -1,0 +1,353 @@
+\documentclass{article}
+
+\newcommand{\checkfor}[1]{%
+  \ifcsname#1\endcsname%
+    Command \texttt{\textbackslash#1} is defined already. Choose
+    another macro!
+  \else%
+    Command name \texttt{\textbackslash#1} is available for
+  \fi%
+}
+
+
+
+\usepackage{kana}
+\begin{document}
+\section{Hiragana Command Sequences:}
+\subsection{Proposed convention 1: \texttt{\textbackslash h + <mora>}}
+\begin{itemize}
+  \item \checkfor{ha} あ
+  \item \checkfor{hi} い
+  \item \checkfor{hu} う
+  \item \checkfor{he} え
+  \item \checkfor{ho} お
+  \item \checkfor{hka} か
+  \item \checkfor{hki} き
+  \item \checkfor{hku} く
+  \item \checkfor{hke} け
+  \item \checkfor{hko} こ
+  \item \checkfor{hsa} さ
+  \item \checkfor{hshi} し
+  \item \checkfor{hsu} す
+  \item \checkfor{hse} せ
+  \item \checkfor{hso} そ
+  \item \checkfor{hta} た
+  \item \checkfor{hchi} ち
+  \item \checkfor{htsu} つ
+  \item \checkfor{hte} て
+  \item \checkfor{hto} と
+  \item \checkfor{hna} な
+  \item \checkfor{hni} に
+  \item \checkfor{hnu} ぬ
+  \item \checkfor{hne} ね
+  \item \checkfor{hno} の
+  \item \checkfor{hha} は
+  \item \checkfor{hhi} ひ
+  \item \checkfor{hfu} ふ
+  \item \checkfor{hhe} へ
+  \item \checkfor{hho} ほ
+  \item \checkfor{hma} ま
+  \item \checkfor{hmi} み
+  \item \checkfor{hmu} む
+  \item \checkfor{hme} め
+  \item \checkfor{hmo} も
+  \item \checkfor{hya} や
+  \item \checkfor{hyu} ゆ
+  \item \checkfor{hyo} よ
+  \item \checkfor{hra} ら
+  \item \checkfor{hri} り
+  \item \checkfor{hru} る
+  \item \checkfor{hre} れ
+  \item \checkfor{hro} ろ
+  \item \checkfor{hwa} わ
+  \item \checkfor{hwo} を
+  \item \checkfor{hn} ん
+  \item \checkfor{hga} が
+  \item \checkfor{hgi} ぎ
+  \item \checkfor{hgu} ぐ
+  \item \checkfor{hge} げ
+  \item \checkfor{hgo} ご
+  \item \checkfor{hza} ざ
+  \item \checkfor{hji} じ
+  \item \checkfor{hzi} じ (alternative romanization)
+  \item \checkfor{hzu} ず
+  \item \checkfor{hze} ぜ
+  \item \checkfor{hzo} ぞ
+  \item \checkfor{hda} だ
+  \item \checkfor{hdi} ぢ
+  \item \checkfor{hdzu} づ
+  \item \checkfor{hdu} づ (alternative romanization)
+  \item \checkfor{hde} で
+  \item \checkfor{hdo} ど
+  \item \checkfor{hba} ば
+  \item \checkfor{hbi} び
+  \item \checkfor{hbu} ぶ
+  \item \checkfor{hbe} べ
+  \item \checkfor{hbo} ぼ
+  \item \checkfor{hpa} ぱ
+  \item \checkfor{hpi} ぴ
+  \item \checkfor{hpu} ぷ
+  \item \checkfor{hpe} ぺ
+  \item \checkfor{hpo} ぽ
+\end{itemize}
+
+\subsection{Proposed convention 2: \texttt{\textbackslash hira + <mora>}}
+\begin{itemize}
+  \item \checkfor{hiraa} あ
+  \item \checkfor{hirai} い
+  \item \checkfor{hirau} う
+  \item \checkfor{hirae} え
+  \item \checkfor{hirao} お
+  \item \checkfor{hiraka} か
+  \item \checkfor{hiraki} き
+  \item \checkfor{hiraku} く
+  \item \checkfor{hirake} け
+  \item \checkfor{hirako} こ
+  \item \checkfor{hirasa} さ
+  \item \checkfor{hirashi} し
+  \item \checkfor{hirasu} す
+  \item \checkfor{hirase} せ
+  \item \checkfor{hiraso} そ
+  \item \checkfor{hirata} た
+  \item \checkfor{hirachi} ち
+  \item \checkfor{hiratsu} つ
+  \item \checkfor{hirate} て
+  \item \checkfor{hirato} と
+  \item \checkfor{hirana} な
+  \item \checkfor{hirani} に
+  \item \checkfor{hiranu} ぬ
+  \item \checkfor{hirane} ね
+  \item \checkfor{hirano} の
+  \item \checkfor{hiraha} は
+  \item \checkfor{hirahi} ひ
+  \item \checkfor{hirafu} ふ
+  \item \checkfor{hirahe} へ
+  \item \checkfor{hiraho} ほ
+  \item \checkfor{hirama} ま
+  \item \checkfor{hirami} み
+  \item \checkfor{hiramu} む
+  \item \checkfor{hirame} め
+  \item \checkfor{hiramo} も
+  \item \checkfor{hiraya} や
+  \item \checkfor{hirayu} ゆ
+  \item \checkfor{hirayo} よ
+  \item \checkfor{hirara} ら
+  \item \checkfor{hirari} り
+  \item \checkfor{hiraru} る
+  \item \checkfor{hirare} れ
+  \item \checkfor{hiraro} ろ
+  \item \checkfor{hirawa} わ
+  \item \checkfor{hirawo} を
+  \item \checkfor{hiran} ん
+  \item \checkfor{hiraga} が
+  \item \checkfor{hiragi} ぎ
+  \item \checkfor{hiragu} ぐ
+  \item \checkfor{hirage} げ
+  \item \checkfor{hirago} ご
+  \item \checkfor{hiraza} ざ
+  \item \checkfor{hiraji} じ
+  \item \checkfor{hirazi} じ (alternative romanization)
+  \item \checkfor{hirazu} ず
+  \item \checkfor{hiraze} ぜ
+  \item \checkfor{hirazo} ぞ
+  \item \checkfor{hirada} だ
+  \item \checkfor{hiradi} ぢ
+  \item \checkfor{hiradzu} づ (alternative romanization)
+  \item \checkfor{hiradu} づ
+  \item \checkfor{hirade} で
+  \item \checkfor{hirado} ど
+  \item \checkfor{hiraba} ば
+  \item \checkfor{hirabi} び
+  \item \checkfor{hirabu} ぶ
+  \item \checkfor{hirabe} べ
+  \item \checkfor{hirabo} ぼ
+  \item \checkfor{hirapa} ぱ
+  \item \checkfor{hirapi} ぴ
+  \item \checkfor{hirapu} ぷ
+  \item \checkfor{hirape} ぺ
+  \item \checkfor{hirapo} ぽ
+\end{itemize}
+
+\section{Katakana Command Sequences:}
+\subsection{Proposed convention 1: \texttt{\textbackslash k + <mora>}}
+\begin{itemize}
+  \item \checkfor{ka} ア
+  \item \checkfor{ki} イ
+  \item \checkfor{ku} ウ
+  \item \checkfor{ke} エ
+  \item \checkfor{ko} オ
+  \item \checkfor{kka} カ
+  \item \checkfor{kki} キ
+  \item \checkfor{kku} ク
+  \item \checkfor{kke} ケ
+  \item \checkfor{kko} コ
+  \item \checkfor{ksa} サ
+  \item \checkfor{kshi} シ
+  \item \checkfor{ksu} ス
+  \item \checkfor{kse} セ
+  \item \checkfor{kso} ソ
+  \item \checkfor{kta} タ
+  \item \checkfor{kchi} チ
+  \item \checkfor{ktsu} ツ
+  \item \checkfor{kte} テ
+  \item \checkfor{kto} ト
+  \item \checkfor{kna} ナ
+  \item \checkfor{kni} ニ
+  \item \checkfor{knu} ヌ
+  \item \checkfor{kne} ネ
+  \item \checkfor{kno} ノ
+  \item \checkfor{kha} ハ
+  \item \checkfor{khi} ヒ
+  \item \checkfor{kfu} フ
+  \item \checkfor{khe} ヘ
+  \item \checkfor{kho} ホ
+  \item \checkfor{kma} マ
+  \item \checkfor{kmi} ミ
+  \item \checkfor{kmu} ム
+  \item \checkfor{kme} メ
+  \item \checkfor{kmo} モ
+  \item \checkfor{kya} ヤ
+  \item \checkfor{kyu} ユ
+  \item \checkfor{kyo} ヨ
+  \item \checkfor{kra} ラ
+  \item \checkfor{kri} リ
+  \item \checkfor{kru} ル
+  \item \checkfor{kre} レ
+  \item \checkfor{kro} ロ
+  \item \checkfor{kwa} ワ
+  \item \checkfor{kwo} ヲ
+  \item \checkfor{kn} ン
+  \item \checkfor{kga} ガ
+  \item \checkfor{kgi} ギ
+  \item \checkfor{kgu} グ
+  \item \checkfor{kge} ゲ
+  \item \checkfor{kgo} ゴ
+  \item \checkfor{kza} ザ
+  \item \checkfor{kji} ジ
+  \item \checkfor{kzi} ジ (alternative romanization)
+  \item \checkfor{kzu} ズ
+  \item \checkfor{kze} ゼ
+  \item \checkfor{kzo} ゾ
+  \item \checkfor{kda} ダ
+  \item \checkfor{kdi} ヂ
+  \item \checkfor{kdu} ヅ
+  \item \checkfor{kdzu} ヅ (alternative romanization)
+  \item \checkfor{kde} デ
+  \item \checkfor{kdo} ド
+  \item \checkfor{kba} バ
+  \item \checkfor{kbi} ビ
+  \item \checkfor{kbu} ブ
+  \item \checkfor{kbe} ベ
+  \item \checkfor{kbo} ボ
+  \item \checkfor{kpa} パ
+  \item \checkfor{kpi} ピ
+  \item \checkfor{kpu} プ
+  \item \checkfor{kpe} ペ
+  \item \checkfor{kpo} ポ
+\end{itemize}
+
+\subsection{Proposed convention 2: \texttt{\textbackslash kata + <mora>}}
+\begin{itemize}
+  \item \checkfor{kataa} ア
+  \item \checkfor{katai} イ
+  \item \checkfor{katau} ウ
+  \item \checkfor{katae} エ
+  \item \checkfor{katao} オ
+  \item \checkfor{kataka} カ
+  \item \checkfor{kataki} キ
+  \item \checkfor{kataku} ク
+  \item \checkfor{katake} ケ
+  \item \checkfor{katako} コ
+  \item \checkfor{katasa} サ
+  \item \checkfor{katashi} シ
+  \item \checkfor{katasu} ス
+  \item \checkfor{katase} セ
+  \item \checkfor{kataso} ソ
+  \item \checkfor{katata} タ
+  \item \checkfor{katachi} チ
+  \item \checkfor{katatsu} ツ
+  \item \checkfor{katate} テ
+  \item \checkfor{katato} ト
+  \item \checkfor{katana} ナ
+  \item \checkfor{katani} ニ
+  \item \checkfor{katanu} ヌ
+  \item \checkfor{katane} ネ
+  \item \checkfor{katano} ノ
+  \item \checkfor{kataha} ハ
+  \item \checkfor{katahi} ヒ
+  \item \checkfor{katafu} フ
+  \item \checkfor{katahe} ヘ
+  \item \checkfor{kataho} ホ
+  \item \checkfor{katama} マ
+  \item \checkfor{katami} ミ
+  \item \checkfor{katamu} ム
+  \item \checkfor{katame} メ
+  \item \checkfor{katamo} モ
+  \item \checkfor{kataya} ヤ
+  \item \checkfor{katayu} ユ
+  \item \checkfor{katayo} ヨ
+  \item \checkfor{katara} ラ
+  \item \checkfor{katari} リ
+  \item \checkfor{kataru} ル
+  \item \checkfor{katare} レ
+  \item \checkfor{kataro} ロ
+  \item \checkfor{katawa} ワ
+  \item \checkfor{katawo} ヲ
+  \item \checkfor{katan} ン
+  \item \checkfor{kataga} ガ
+  \item \checkfor{katagi} ギ
+  \item \checkfor{katagu} グ
+  \item \checkfor{katage} ゲ
+  \item \checkfor{katago} ゴ
+  \item \checkfor{kataza} ザ
+  \item \checkfor{kataji} ジ
+  \item \checkfor{katazi} ジ (alternative romanization)
+  \item \checkfor{katazu} ズ
+  \item \checkfor{kataze} ゼ
+  \item \checkfor{katazo} ゾ
+  \item \checkfor{katada} ダ
+  \item \checkfor{katadi} ヂ
+  \item \checkfor{katadu} ヅ
+  \item \checkfor{katadzu} ヅ (alternative romanization)
+  \item \checkfor{katade} デ
+  \item \checkfor{katado} ド
+  \item \checkfor{kataba} バ
+  \item \checkfor{katabi} ビ
+  \item \checkfor{katabu} ブ
+  \item \checkfor{katabe} ベ
+  \item \checkfor{katabo} ボ
+  \item \checkfor{katapa} パ
+  \item \checkfor{katapi} ピ
+  \item \checkfor{katapu} プ
+  \item \checkfor{katape} ペ
+  \item \checkfor{katapo} ポ
+\end{itemize}
+
+\section{Punctuation, etc.}
+\begin{itemize}
+  \item \checkfor{kuten} 。
+  \item \checkfor{periodt} 。 (hehehehehe)
+  \item \checkfor{tooten} 、
+  \item \checkfor{maru} 〇
+  \item \checkfor{lkakko} 〈
+  \item \checkfor{rkakko} 〉
+  \item (Alternative) \checkfor{jlangle} 〈
+  \item (Alternative) \checkfor{jrangle} 〉
+  \item \checkfor{lkakko} 《
+  \item \checkfor{rkakko} 》
+  \item (Alternative) \checkfor{jllangle} 《
+  \item (Alternative) \checkfor{jrrangle} 》
+  \item \checkfor{lnkagi} 「
+  \item \checkfor{rnkagi} 」
+  \item \checkfor{lnkagi} 『
+  \item \checkfor{rnkagi} 』
+  \item \checkfor{lkikko} 〔
+  \item \checkfor{rkikko} 〕
+  \item \checkfor{shime} 〆
+  \item \checkfor{nami} ～
+  \item (Alternative) \checkfor{nyoro} ～
+  \item (Alternative) \checkfor{naishi} ～
+
+\end{itemize}
+
+\end{document}

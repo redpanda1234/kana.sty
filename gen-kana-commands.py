@@ -44,7 +44,7 @@ def def_tex(char, num):
 
 with open("out.txt", "w") as f:
     nums1 = orange_inclusive("0o001", "0o007")
-    ps1 = "、。〃　々乄〇"
+    ps1 = "、。〃　々〆〇"
 
     nums2 = orange_inclusive("0o010", "0o017")
     ps2 = "〈〉《》「」『』"
