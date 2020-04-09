@@ -17,10 +17,10 @@ hiragana + katakana + partial punctuation support]
 % ================================================================== %
 
 % Adds easy typing support for Hiragana in plaintext situations
-\RequirePackage[whole]{bxcjkjatype}
+% \RequirePackage[whole]{bxcjkjatype}
 
 % Needed to interpret the hiragana characters defined in this file
-% \RequirePackage[utf8]{inputenc}
+\RequirePackage[utf8]{inputenc}
 
 
 % Ok for some reason this all only works if I load amsmath in
@@ -198,10 +198,11 @@ hiragana + katakana + partial punctuation support]
 \newunicodechar{れ}{\text{\usefont{U}{min}{m}{n}\symbol{'214}}}
 \newunicodechar{ろ}{\text{\usefont{U}{min}{m}{n}\symbol{'215}}}
 \newunicodechar{ゎ}{\text{\usefont{U}{min}{m}{n}\symbol{'216}}}
-\newunicodechar{ゐ}{\text{\usefont{U}{min}{m}{n}\symbol{'217}}}
-\newunicodechar{ゑ}{\text{\usefont{U}{min}{m}{n}\symbol{'220}}}
-\newunicodechar{を}{\text{\usefont{U}{min}{m}{n}\symbol{'221}}}
-\newunicodechar{ん}{\text{\usefont{U}{min}{m}{n}\symbol{'222}}}
+\newunicodechar{わ}{\text{\usefont{U}{min}{m}{n}\symbol{'217}}}
+\newunicodechar{ゐ}{\text{\usefont{U}{min}{m}{n}\symbol{'220}}}
+\newunicodechar{ゑ}{\text{\usefont{U}{min}{m}{n}\symbol{'221}}}
+\newunicodechar{を}{\text{\usefont{U}{min}{m}{n}\symbol{'222}}}
+\newunicodechar{ん}{\text{\usefont{U}{min}{m}{n}\symbol{'223}}}
 \newunicodechar{゛}{\text{\usefont{U}{min}{m}{n}\symbol{'223}}}
 \newunicodechar{゜}{\text{\usefont{U}{min}{m}{n}\symbol{'224}}}
 \newunicodechar{ゝ}{\text{\usefont{U}{min}{m}{n}\symbol{'225}}}
@@ -284,13 +285,18 @@ hiragana + katakana + partial punctuation support]
 \newunicodechar{レ}{\text{\usefont{U}{min}{m}{n}\symbol{'354}}}
 \newunicodechar{ロ}{\text{\usefont{U}{min}{m}{n}\symbol{'355}}}
 \newunicodechar{ヮ}{\text{\usefont{U}{min}{m}{n}\symbol{'356}}}
-\newunicodechar{ヰ}{\text{\usefont{U}{min}{m}{n}\symbol{'357}}}
-\newunicodechar{ヱ}{\text{\usefont{U}{min}{m}{n}\symbol{'360}}}
-\newunicodechar{ヲ}{\text{\usefont{U}{min}{m}{n}\symbol{'361}}}
-\newunicodechar{ン}{\text{\usefont{U}{min}{m}{n}\symbol{'362}}}
-\newunicodechar{ヴ}{\text{\usefont{U}{min}{m}{n}\symbol{'363}}}
-\newunicodechar{ヵ}{\text{\usefont{U}{min}{m}{n}\symbol{'364}}}
-\newunicodechar{ヶ}{\text{\usefont{U}{min}{m}{n}\symbol{'365}}}
+\newunicodechar{ワ}{\text{\usefont{U}{min}{m}{n}\symbol{'357}}}
+\newunicodechar{ヰ}{\text{\usefont{U}{min}{m}{n}\symbol{'360}}}
+\newunicodechar{ヱ}{\text{\usefont{U}{min}{m}{n}\symbol{'361}}}
+\newunicodechar{ヲ}{\text{\usefont{U}{min}{m}{n}\symbol{'362}}}
+\newunicodechar{ン}{\text{\usefont{U}{min}{m}{n}\symbol{'363}}}
+\newunicodechar{ヴ}{\text{\usefont{U}{min}{m}{n}\symbol{'364}}}
+\newunicodechar{ヵ}{\text{\usefont{U}{min}{m}{n}\symbol{'365}}}
+\newunicodechar{ヶ}{\text{\usefont{U}{min}{m}{n}\symbol{'366}}}
+\newunicodechar{・}{\text{\usefont{U}{min}{m}{n}\symbol{'373}}}
+\newunicodechar{ー}{\text{\usefont{U}{min}{m}{n}\symbol{'374}}}
+\newunicodechar{ヽ}{\text{\usefont{U}{min}{m}{n}\symbol{'375}}}
+\newunicodechar{ヾ}{\text{\usefont{U}{min}{m}{n}\symbol{'376}}}
 
 \DeclareFontFamily{U}{min}{}
 \DeclareFontShape{U}{min}{m}{n}{<-> udmj30}{}
