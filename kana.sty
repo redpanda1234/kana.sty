@@ -8,6 +8,17 @@
 \ProvidesPackage{kana}[2020/04/08 v0.01 macro package to add
 hiragana + katakana + partial punctuation support]
 
+% By default, the package loads in commands of the following forms:
+%
+% Hiragana:
+%   `\hira` + <mora>
+% Katakana:
+%   `\kata` + <mora'
+%
+% With varying rules for punctuation, as described in the table <which
+% I will theoretically write at some point when I'm not pressed for
+% time on cleaning up my thesis.>
+
 
 
 % ================================================================== %
@@ -16,41 +27,27 @@ hiragana + katakana + partial punctuation support]
 %                                                                    %
 % ================================================================== %
 
-% Adds easy typing support for Hiragana in plaintext situations
-% \RequirePackage[whole]{bxcjkjatype}
-
 % Needed to interpret the hiragana characters defined in this file
 \RequirePackage[utf8]{inputenc}
 
-
-% Ok for some reason this all only works if I load amsmath in
-% _addition_ to newunicodechar???
-\RequirePackage{amsmath}
+% For defining new unicode characters to the engine so we can type
+% directly into the document with no adverse effects
 \RequirePackage{newunicodechar}
 
-% Convenience string of all hiragana:
-% あいうえおかきくけこさしすせそたちつてとはひふへほまみむめもらりるれ ろわをん
-
-% Similarly for Katakana
-% アイウエオカキクケコサシスセソタチツテトハヒフヘホマミムメモラリルレ ロワヲン
-%
-
-
+% We use amsmath so we can employ the `\text{...}` command to define
+% the typesetting of our symbols. This is nice, because it will
+% automatically switch to a subscript-sized font if we try and use one
+% of the glyphs below inside of a subscript, which seems like a
+% totally valid use-case scenario.
+\RequirePackage{amsmath}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+% ------------------------------------------------------------------ %
+%                                                                    %
+%                       OK now the actual stuff                      %
+%                                                                    %
+% ------------------------------------------------------------------ %
 
 % The actual definitions, a la the order defined by the mysterious
 % table given in this thread:
@@ -298,6 +295,8 @@ hiragana + katakana + partial punctuation support]
 \newunicodechar{ー}{\text{\usefont{U}{min}{m}{n}\symbol{'374}}}
 \newunicodechar{ヽ}{\text{\usefont{U}{min}{m}{n}\symbol{'375}}}
 \newunicodechar{ヾ}{\text{\usefont{U}{min}{m}{n}\symbol{'376}}}
+
+
 
 \DeclareFontFamily{U}{min}{}
 \DeclareFontShape{U}{min}{m}{n}{<-> udmj30}{}

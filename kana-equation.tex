@@ -7,8 +7,39 @@
 \usepackage{scalerel}
 \DeclareMathOperator*{\bighi}{\scaleobj{1.5}{\scalerel*{ひ}{\bigcup}}}
 
+% \newcommand{\pn}[1]{\left(#1\right)}
+
+\newcommand{\tbp}[1]{\scalerel*{〔}{\left(#1\right)} #1
+  \scalerel*{〕}{\left(#1\right)}}
+
+\newcommand{\sqs}[1]{\scalerel*{「}{\left(#1\right)} #1
+  \scalerel*{」}{\left(#1\right)}}
+
+\newcommand{\dqs}[1]{\scalerel*{『}{\left(#1\right)} #1
+  \scalerel*{』}{\left(#1\right)}}
+
+\newcommand{\lent}[1]{\scalerel*{【}{\left(#1\right)} #1
+  \scalerel*{】}{\left(#1\right)}}
+
+\newcommand{\dangles}[1]{\scalerel*{《}{\left(#1\right)} #1
+  \scalerel*{》}{\left(#1\right)}}
+
+\newcommand{\testpdelim}[1]{
+  #1{\sum_{k=0}^{#1{n}} #1{s_k^{k+1}}}
+  % #1{#1{#1{#1{\phantom{a}}^{\phantom{a}}}^{\phantom{a}}}^{\phantom{a}}}
+}
 
 \begin{document}
-$\displaystyle \underbrace{\bighi_{ら=1}^{り} 『の_1 + り\hspace{-.25em}・
-  \hspace{-.5em}〔あ～お〕\hspace{-.5em}^{ぶ}』}_{\text{\LaTeX}　でかいたの!}$
+$\displaystyle
+\testpdelim{\tbp}
+\testpdelim{\sqs}
+\testpdelim{\dqs}
+\testpdelim{\lent}
+\testpdelim{\dangles}
+% \tbp{\sum_{i=0}^{\tbp{n}} \tbp{s_k^{k+1}}} \sqs{\sum_{k=0}^n} \dqs{\sum_{k=0}^n} \lent{\sum_{i=0}^n}
+$
+
+$\displaystyle \underbrace{\bighi_{ら=1}^{り} 『の_1
+  + り\hspace{-.25em}・\hspace{-.5em}〔あ～
+  お〕\hspace{-.5em}^{ぶ}』}_{\text{\LaTeX}　でかいたの!}$
 \end{document}
